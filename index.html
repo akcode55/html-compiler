@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محرر كود متقدم</title>
+
+    <!-- تضمين مكتبة CodeMirror -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/xml/xml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/htmlmixed/htmlmixed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/matchbrackets.min.js"></script>
+
+</head>
+</head>
+<body>
+
+    <!-- شريط الأدوات -->
+    <div class="toolbar">
+        <button onclick="home()"><i>🏠</i> الصفحة الرئيسية</button>
+        <input type="file" id="uploadFile" style="display: none;" onchange="loadFile(event)">
+        <button onclick="document.getElementById('uploadFile').click()"><i>📥</i> تحميل</button>
+        <button onclick="resetEditor()"><i>🔄</i> إعادة تعيين</button>
+        <button onclick="runCode()" class="run-button"><i>▶️</i> تشغيل</button>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        <div class="editor-container">
+            <textarea id="code-editor"></textarea>
+        </div>
+        <div class="output" id="output"></div>
+    </div>
+
+    <!-- تضمين ملف JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

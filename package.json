@@ -1,0 +1,35 @@
+{
+    "app_name": "compiler",
+    "main": "index.html",
+    "name": "compiler",
+    "webexe_settings": {
+        "blacklist": "",
+        "custom_script": "",
+        "download_dir": "C:/Users/AK Code/Downloads",
+        "export_dir": "output",
+        "force_download": false,
+        "nw_compression_level": 0,
+        "nw_version": "0.93.0",
+        "output_pattern": "",
+        "sdk_build": false,
+        "uncompressed_folder": false,
+        "whitelist": "",
+        "windows-x64": true
+    },
+    "webkit": {},
+    "window": {
+        "as_desktop": true,
+        "exe_icon": "compiler.png",
+        "frame": true,
+        "fullscreen": false,
+        "icon": "compiler.png",
+        "id": "compiler",
+        "mac_icon": "compiler.png",
+        "resizable": true,
+        "show": true,
+        "show_in_taskbar": true,
+        "title": "compiler",
+        "visible": true,
+        "visible_on_all_workspaces": true
+    }
+}
